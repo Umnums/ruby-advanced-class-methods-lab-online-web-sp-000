@@ -26,7 +26,7 @@ class Song
       if songs.name == name
         return songs
       else
-        self.create_by_name(name)
+        return self.create_by_name(name)
       end
     end
     return nil
