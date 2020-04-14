@@ -25,6 +25,8 @@ class Song
     self.all.each do |songs|
       if songs.name == name
         return songs
+      else
+        self.create_by_name(name)
       end
     end
     return nil
